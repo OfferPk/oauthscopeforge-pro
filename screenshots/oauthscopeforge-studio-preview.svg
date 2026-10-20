@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090915"/>
+      <stop offset="50%" stop-color="#111126"/>
+      <stop offset="100%" stop-color="#04040a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#d946ef"/>
+    </linearGradient>
+    <linearGradient id="gradeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+
+  <!-- Top App Bar -->
+  <rect x="30" y="24" width="1140" height="60" rx="10" fill="#181836" stroke="#2b2b52" stroke-width="1.5"/>
+  <rect x="46" y="38" width="32" height="32" rx="6" fill="url(#accent)"/>
+  <text x="62" y="60" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" text-anchor="middle">&#128274;</text>
+  <text x="90" y="58" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="18">OAuthScopeForge Pro</text>
+  <text x="290" y="57" fill="#64748b" font-family="-apple-system, sans-serif" font-size="12">OAuth 2.1 Scope Enforcement Studio &amp; DPoP (RFC 9449) Verifier</text>
+  
+  <rect x="915" y="40" width="115" height="26" rx="6" fill="#8b5cf6" fill-opacity="0.15" stroke="#8b5cf6" stroke-opacity="0.4"/>
+  <text x="972" y="57" fill="#a78bfa" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">OAuth 2.1 Draft</text>
+  <rect x="1040" y="40" width="115" height="26" rx="6" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-opacity="0.4"/>
+  <text x="1097" y="57" fill="#06b6d4" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">RFC 9449 DPoP</text>
+
+  <!-- Left Column: Config -->
+  <rect x="30" y="104" width="555" height="360" rx="10" fill="#181836" stroke="#2b2b52" stroke-width="1.5"/>
+  <text x="50" y="134" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">1. OAuth 2.1 &amp; DPoP Token Binding Inspector</text>
+
+  <text x="50" y="166" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">Target API Endpoint &amp; Method:</text>
+  <rect x="50" y="174" width="515" height="34" rx="6" fill="#0c0c1e" stroke="#2b2b52"/>
+  <text x="64" y="196" fill="#38bdf8" font-family="monospace" font-size="12">POST https://api.bank.com/v1/payments/transfer</text>
+
+  <!-- Params Grid -->
+  <rect x="50" y="222" width="248" height="42" rx="6" fill="#0c0c1e" stroke="#8b5cf6"/>
+  <text x="64" y="248" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12">Token Binding: <tspan fill="#34d399" font-weight="700">DPoP (RFC 9449)</tspan></text>
+
+  <rect x="316" y="222" width="248" height="42" rx="6" fill="#0c0c1e" stroke="#8b5cf6"/>
+  <text x="330" y="248" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="12">PKCE Method: <tspan fill="#38bdf8">S256 (Mandatory)</tspan></text>
+
+  <!-- Token Box -->
+  <rect x="50" y="278" width="515" height="168" rx="8" fill="#060612" stroke="#2b2b52"/>
+  <text x="66" y="302" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">SECURITY DIRECTIVES &amp; PROOF CLAIMS:</text>
+  
+  <text x="66" y="324" fill="#e2e8f0" font-family="monospace" font-size="11">Token Scheme: DPoP &bull; Proof Header typ: dpop+jwt (ES256)</text>
+  <text x="66" y="344" fill="#38bdf8" font-family="monospace" font-size="11">Client Thumbprint: cnf.jkt = urn:ietf:params:oauth:jwk:sha-256...</text>
+  <text x="66" y="364" fill="#10b981" font-family="monospace" font-size="11">&#10003; HTM (POST) and HTU Parity Match Verified</text>
+  <text x="66" y="384" fill="#10b981" font-family="monospace" font-size="11">&#10003; Implicit Grant &amp; Password Grant (ROPC) Disabled</text>
+  <text x="66" y="404" fill="#10b981" font-family="monospace" font-size="11">&#10003; Exact Redirect URI Matching &amp; PKCE S256 Active</text>
+  <text x="66" y="424" fill="#a78bfa" font-family="monospace" font-size="11">Scopes: openid profile read:accounts write:payments</text>
+
+  <!-- Right Column: 10-Point Scorecard -->
+  <rect x="615" y="104" width="555" height="360" rx="10" fill="#181836" stroke="#2b2b52" stroke-width="1.5"/>
+  <text x="635" y="134" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">2. 10-Point Zero-Trust OAuth 2.1 Health Scorecard</text>
+
+  <rect x="635" y="152" width="515" height="74" rx="8" fill="#0c0c1e" stroke="#2b2b52"/>
+  <circle cx="678" cy="189" r="28" fill="url(#gradeGrad)"/>
+  <text x="678" y="196" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="800" font-size="20" text-anchor="middle">A+</text>
+  <text x="722" y="180" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="16">100 / 100 Score</text>
+  <text x="722" y="200" fill="#10b981" font-family="-apple-system, sans-serif" font-size="12">Zero-Trust Sender-Constrained &bull; FAPI 2.0 Aligned</text>
+  <text x="1080" y="184" fill="#10b981" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="end">10 / 10 Passed</text>
+  <text x="1080" y="200" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" text-anchor="end">0 Warnings &bull; 0 Fails</text>
+
+  <!-- Audit List Items -->
+  <rect x="635" y="238" width="515" height="32" rx="4" fill="#0e0e24" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="258" fill="#34d399" font-family="monospace" font-size="11">[PASS] DPoP Token Binding: Sender-constrained via cnf.jkt.</text>
+
+  <rect x="635" y="278" width="515" height="32" rx="4" fill="#0e0e24" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="298" fill="#34d399" font-family="monospace" font-size="11">[PASS] Mandatory PKCE: S256 code challenge enforced.</text>
+
+  <rect x="635" y="318" width="515" height="32" rx="4" fill="#0e0e24" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="338" fill="#34d399" font-family="monospace" font-size="11">[PASS] Insecure Grants: Implicit and ROPC grants disabled.</text>
+
+  <rect x="635" y="358" width="515" height="32" rx="4" fill="#0e0e24" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="378" fill="#34d399" font-family="monospace" font-size="11">[PASS] Exact Redirect URI: Strict string match without wildcards.</text>
+
+  <rect x="635" y="398" width="515" height="32" rx="4" fill="#0e0e24" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="418" fill="#34d399" font-family="monospace" font-size="11">[PASS] HTM/HTU Parity: Method and target URI match verified.</text>
+
+  <!-- Bottom Panel: Multi-Gateway Synthesizer -->
+  <rect x="30" y="484" width="1140" height="190" rx="10" fill="#181836" stroke="#2b2b52" stroke-width="1.5"/>
+  <text x="50" y="514" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">3. Multi-Gateway Synthesizer (Node.js, Python, Go, Envoy Proxy v3)</text>
+
+  <rect x="50" y="528" width="1100" height="130" rx="6" fill="#04040e" stroke="#1e1e38"/>
+  <text x="66" y="552" fill="#a78bfa" font-family="monospace" font-size="12">// Node.js Express DPoP Verification Middleware</text>
+  <text x="66" y="572" fill="#cbd5e1" font-family="monospace" font-size="12">const clientThumbprint = await calculateJwkThumbprint(dpopHead.jwk, 'sha256');</text>
+  <text x="66" y="592" fill="#34d399" font-family="monospace" font-size="12">if (dpopPayload.htm !== req.method || dpopPayload.htu !== fullUrl) throw new Error('Parity mismatch');</text>
+  <text x="66" y="612" fill="#34d399" font-family="monospace" font-size="12">// Zero-Trust Sender-Constrained Tokens &bull; Bearer Exfiltration Neutralized</text>
+</svg>
